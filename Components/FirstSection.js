@@ -10,7 +10,7 @@ export default function FirstSection() {
           We help you to relight your idea or transform existing business by providing more value
           for it.
         </div>
-        <div className='w-80 sm:w-auto px-6'>
+        <div className='w-80 sm:w-auto '>
           <ContactUsButton />
         </div>
       </div>
