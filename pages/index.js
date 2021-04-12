@@ -49,14 +49,14 @@ from one hand.`}
           textContent={`We provide high-quality design and developing solutions for Web & Mobile applications.`}
         />
       </div>
-      <div className=' w-full flex justify-center h-80  relative '>
+      <div className=' w-full  flex justify-center font-lato h-auto md:h-60'>
         <ContactUsSection
           emoji={`💬 😉`}
           heading={`Have questions?`}
           textContent={`Do not hesitate to write to us and we will try to help you.\nWe are waiting for your message`}
         />
       </div>
-      <div className='bg-[#fafafa] dark:bg-gray-800 flex justify-center items-end h-[240px] md:h-[240px] lg:h-[463px] '>
+      <div className='bg-[#fafafa] dark:bg-gray-800 flex justify-center items-end h-[80px]  md:h-[420px] '>
         <Footer />
       </div>
     </div>

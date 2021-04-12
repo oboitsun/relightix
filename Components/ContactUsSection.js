@@ -21,7 +21,7 @@ export default function ContactUsSection({ emoji, heading, textContent }) {
         visible: { opacity: 1 },
         hidden: { opacity: 0 },
       }}
-      className='w-full lg:w-[80%] h-auto lg:h-[558px] bg-blue-100 absolute flex flex-col items-center justify-between py-6 md:py-12 lg:py-24 px-6  md:px-10 lg:px-20  font-lato -bottom-1/2 lg:-bottom-[279px] shadow-semi lg:rounded-3xl'>
+      className='w-full sm:w-4/5  md:relative h-480 md:-bottom-[240px]   bg-blue-100  flex flex-col items-center justify-center py-6 md:py-12 lg:py-24 px-6  md:px-10 lg:px-20  shadow-semi  sm:rounded-3xl '>
       <p className='text-3xl md:text-6xl'>{emoji}</p>
       <p className='md:text-2xl opacity-50 font-light py-4'>{heading}</p>
       <p className='text-2xl md:text-4xl  leading-normal font-bold text-center flex flex-col items-center'>
@@ -29,7 +29,9 @@ export default function ContactUsSection({ emoji, heading, textContent }) {
           <span key={i}>{t}</span>
         ))}
       </p>
-      <ContactUsButton useDark={false} />
+      <div className='pt-10'>
+        <ContactUsButton useDark={false} />
+      </div>
     </motion.div>
   )
 }
