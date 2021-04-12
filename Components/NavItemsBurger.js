@@ -25,7 +25,9 @@ const NavItemsBurger = React.memo(() => {
         animate={showMenu ? 'open' : 'close'}>
         <div className='w-full h-1/2 flex flex-col justify-between px-10'>
           {menuItems.map((t, i) => (
-            <div key={i} className='font-semibold text-7xl uppercase dark:text-white text-black'>
+            <div
+              key={i}
+              className='font-semibold text-3xl lg:text-7xl uppercase dark:text-white text-black'>
               {t}
             </div>
           ))}
