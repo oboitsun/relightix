@@ -1,65 +1,64 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-
+import FirstSection from '../Components/FirstSection'
+import NextSection from '../Components/NextSection'
+import Footer from '../Components/Footer'
+import ContactUsSection from '../Components/ContactUsSection'
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Relightix</title>
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      <div className='flex items-center bg-[#fafafa] dark:bg-gray-800 min-h-screen'>
+        <FirstSection />
+      </div>
+      <div className=' w-full pt-10  md:pt-36 '>
+        <NextSection
+          key={1}
+          bg={`bg-green-100`}
+          rounded={`rounded-l-60`}
+          i={1}
+          emoji={`👋`}
+          heading={`What we familiar with?`}
+          textContent={`Our team have full-stack skills
+to develop and provide a whole circle process of development
+from one hand.`}
+        />
+      </div>
+      <div className=' w-full pt-10  md:pt-36'>
+        <NextSection
+          key={2}
+          bg={`bg-purple-100`}
+          rounded={`rounded-r-60`}
+          content=''
+          i={2}
+          emoji={`🤝`}
+          heading={`How can we help you?`}
+          textContent={`We provide high-quality design and developing solutions for Web & Mobile applications.`}
+        />
+      </div>
+      <div className=' w-full pt-10  md:pt-36 pb-10 md:pb-36'>
+        <NextSection
+          key={3}
+          bg={`bg-yellow-100`}
+          rounded={`rounded-l-60`}
+          content=''
+          i={3}
+          emoji={`👋`}
+          heading={`How can we help you?`}
+          textContent={`We provide high-quality design and developing solutions for Web & Mobile applications.`}
+        />
+      </div>
+      <div className=' w-full flex justify-center h-80  relative '>
+        <ContactUsSection
+          emoji={`💬 😉`}
+          heading={`Have questions?`}
+          textContent={`Do not hesitate to write to us and we will try to help you.\nWe are waiting for your message`}
+        />
+      </div>
+      <div className='bg-[#fafafa] dark:bg-gray-800 flex justify-center items-end h-[240px] md:h-[240px] lg:h-[463px] '>
+        <Footer />
+      </div>
     </div>
   )
 }
