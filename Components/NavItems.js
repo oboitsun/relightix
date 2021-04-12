@@ -1,5 +1,4 @@
 import React from 'react'
-
 import NavItemsBurger from './NavItemsBurger'
 import NavItemsFull from './NavItemsFull'
 
