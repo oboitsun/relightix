@@ -8,10 +8,11 @@ export default function Home() {
     <div>
       <Head>
         <title>Relightix</title>
+        <meta lang='en' />
+        <meta property='og:type' content='website' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
-        <meta name='description' content='Let our team to do the heavy work for you 💻📱' />
-        <meta name='og:description' content='We are the team of developers.' />
+        <meta name='og:description' content='Let our team to do the heavy work for you 💻📱' />
         <meta property='og:url' content='https://www.relightix.com/' />
         <meta property='og:image' content='https://www.relightix.com/preview.jpg' />
       </Head>
