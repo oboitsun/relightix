@@ -13,7 +13,7 @@ export default function Home() {
         <meta name='description' content='Let our team to do the heavy work for you 💻📱' />
         <meta name='og:description' content='We are the team of developers.' />
         <meta property='og:url' content='https://www.relightix.com/' />
-        <meta property='og:image' content='https://www.relightix.com/Logo.png' />
+        <meta property='og:image' content='https://www.relightix.com/preview.jpg' />
       </Head>
       <div className='flex items-center bg-[#fafafa] dark:bg-gray-800 min-h-screen'>
         <FirstSection />
