@@ -8,6 +8,10 @@ export default function Home() {
     <div>
       <Head>
         <title>Relightix</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta name='description' content='Relightix is the team of developers.' />
+        <meta property='og:image' content='/RELIGHTIX.svg' />
       </Head>
       <div className='flex items-center bg-[#fafafa] dark:bg-gray-800 min-h-screen'>
         <FirstSection />
