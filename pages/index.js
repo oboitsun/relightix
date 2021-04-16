@@ -1,8 +1,12 @@
 import Head from 'next/head'
 import FirstSection from '../Components/FirstSection'
+import AboutUs from '../Components/AboutUs'
+import WhatWeFamiliarWith from '../Components/WhatWeFamiliarWith'
 import NextSection from '../Components/NextSection'
 import Footer from '../Components/Footer'
 import ContactUsSection from '../Components/ContactUsSection'
+import EndlessText from '../Components/EndlessText'
+import Testimonials from '../Components/Testimonials'
 export default function Home() {
   return (
     <div>
@@ -16,54 +20,31 @@ export default function Home() {
         <meta property='og:url' content='https://www.relightix.com/' />
         <meta property='og:image' content='https://www.relightix.com/preview.jpg' />
       </Head>
-      <div className='flex items-center bg-[#fafafa] dark:bg-gray-800 min-h-screen'>
+      <div className='flex items-center w-full  dark:bg-gray-800 lg:min-h-screen'>
         <FirstSection />
       </div>
-      <div className=' w-full pt-10  md:pt-36 '>
-        <NextSection
-          key={1}
-          bg={`bg-green-100`}
-          rounded={`rounded-l-60`}
-          i={1}
-          emoji={`👋`}
-          heading={`What we familiar with?`}
-          textContent={`Our team have full-stack skills
-to develop and provide a whole circle process of development
-from one hand.`}
-        />
+      <div className='w-full h-auto py-12 relative bg-gray-50 '>
+        <div className='absolute w-full h-auto bg-gray-100 z-0 top-0 left-0'></div>
+        <AboutUs />
       </div>
-      <div className=' w-full pt-10  md:pt-36'>
-        <NextSection
-          key={2}
-          bg={`bg-purple-100`}
-          rounded={`rounded-r-60`}
-          content=''
-          i={2}
-          emoji={`🤝`}
-          heading={`How can we help you?`}
-          textContent={`We provide high-quality design and developing solutions for Web & Mobile applications.`}
-        />
+      <div className='w-full h-auto py-12 relative bg-yellow-50'>
+        <div className='absolute w-full h-auto bg-gray-100 z-0 top-0 left-0'></div>
+        <WhatWeFamiliarWith />
       </div>
       <div className=' w-full pt-10  md:pt-36 pb-10 md:pb-36'>
-        <NextSection
-          key={3}
-          bg={`bg-yellow-100`}
-          rounded={`rounded-l-60`}
-          content=''
-          i={3}
-          emoji={`👋`}
-          heading={`How can we help you?`}
-          textContent={`We provide high-quality design and developing solutions for Web & Mobile applications.`}
-        />
+        <EndlessText />
       </div>
-      <div className=' w-full  flex justify-center font-lato h-auto md:h-60'>
+      <div className='w-full h-auto pt-12 relative bg-green-50'>
+        <Testimonials />
+      </div>
+      <div className='w-full h-auto py-12 relative  bg-blue-100  '>
         <ContactUsSection
           emoji={`💬 😉`}
           heading={`Have questions?`}
           textContent={`Do not hesitate to write to us and we will try to help you.\nWe are waiting for your message`}
         />
       </div>
-      <div className='bg-[#fafafa] dark:bg-gray-800 flex justify-center items-end h-[80px]  md:h-[420px] '>
+      <div className='bg-[#fafafa] dark:bg-gray-800 flex justify-center items-end'>
         <Footer />
       </div>
     </div>

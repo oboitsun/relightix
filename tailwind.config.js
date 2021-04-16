@@ -1,7 +1,7 @@
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './Components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'media', // or 'media' or 'class'
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       spacing: { '10p': '5%', 480: '480px' },
@@ -20,6 +20,9 @@ module.exports = {
       },
       gridAutoRows: {
         sq: 'minmax(33%, 1fr)',
+      },
+      fontSize: {
+        54: '54px',
       },
     },
   },

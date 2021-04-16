@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import React from 'react'
+
 const Burger = ({ setShowMenu, showMenu }) => {
   const variants = {
     open: { rotate: 0, transition: { duration: 0.5 } },
@@ -11,7 +11,7 @@ const Burger = ({ setShowMenu, showMenu }) => {
   }
   const Path = (props) => (
     <motion.path
-      className='dark:border-px dark:border-gray-900'
+      className='dark:border-px dark:border-gray-900 '
       fill='currentColor'
       strokeLinecap='round'
       strokeWidth='3'
@@ -21,44 +21,46 @@ const Burger = ({ setShowMenu, showMenu }) => {
     />
   )
   return (
-    <svg
-      onClick={() => {
-        setShowMenu(!showMenu)
-      }}
-      className='fill-current fixed top-10 right-5 w-10 h-10 z-40 cursor-pointer '
-      viewBox='0 0 23 23'>
-      <Path
-        filter='drop-shadow( 0.5px 0.5px 0.5px  rgba(0, 0, 0, .2))'
-        variants={variants2}
-        d='M 2 4 L 20 4 '
-        key={2}
-        stroke='currentColor'
-      />
-      <Path
-        filter='drop-shadow( 0.5px 0.5px 0.5px  rgba(0, 0, 0, .1))'
-        custom={true}
-        variants={variants}
-        d='M 2 10 L 20 10'
-        key={1}
-        stroke='currentColor'
-      />
-      <Path
-        filter='drop-shadow( 0.5px 0.5px 0.5px  rgba(0, 0, 0, .1))'
-        custom={false}
-        variants={variants}
-        d='M 2 10 L 20 10'
-        key={4}
-        stroke='currentColor'
-      />
+    <div>
+      <svg
+        onClick={() => {
+          setShowMenu(!showMenu)
+        }}
+        className={`fill-current relative right-5 w-6 h-5 z-40 cursor-pointer `}
+        viewBox='0 0 23 23'>
+        <Path
+          filter='drop-shadow( 0.5px 0.5px 0.5px  rgba(0, 0, 0, .2))'
+          variants={variants2}
+          d='M 2 4 L 20 4 '
+          key={2}
+          stroke='currentColor'
+        />
+        <Path
+          filter='drop-shadow( 0.5px 0.5px 0.5px  rgba(0, 0, 0, .1))'
+          custom={true}
+          variants={variants}
+          d='M 2 10 L 20 10'
+          key={1}
+          stroke='currentColor'
+        />
+        <Path
+          filter='drop-shadow( 0.5px 0.5px 0.5px  rgba(0, 0, 0, .1))'
+          custom={false}
+          variants={variants}
+          d='M 2 10 L 20 10'
+          key={4}
+          stroke='currentColor'
+        />
 
-      <Path
-        filter='drop-shadow( 0.5px 0.5px 0.5px  rgba(0, 0, 0, .2))'
-        variants={variants2}
-        d='M 2 16 L 20 16'
-        key={3}
-        stroke='currentColor'
-      />
-    </svg>
+        <Path
+          filter='drop-shadow( 0.5px 0.5px 0.5px  rgba(0, 0, 0, .2))'
+          variants={variants2}
+          d='M 2 16 L 20 16'
+          key={3}
+          stroke='currentColor'
+        />
+      </svg>
+    </div>
   )
 }
 

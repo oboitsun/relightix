@@ -16,7 +16,7 @@ export default function Logo() {
       {items.map(
         (it, i) =>
           i < items.length && (
-            <div className={`flex justify-center items-center ${it} shadow-md `}></div>
+            <div key={i} className={`flex justify-center items-center ${it} shadow-md `}></div>
           )
       )}
     </div>

@@ -1,19 +1,19 @@
-import Bootstrap from './Bootstrap'
-import Css3 from './Css3'
-import Expressjs from './Expressjs'
-import Figma from './Figma'
-import Graphql from './Graphql'
-import Html from './Html'
-import Js from './Js'
-import Material from './Material'
-import Mongo from './Mongo'
-import Node from './Node'
-import React from './React'
-import Redux from './Redux'
-import Sass from './Sass'
-import Sketch from './Sketch'
-import Tailwind from './Tailwind'
-import Webflow from './Webflow'
+import Bootstrap from './icons/Bootstrap'
+import Css3 from './icons/Css3'
+import Expressjs from './icons/Expressjs'
+import Figma from './icons/Figma'
+import Graphql from './icons/Graphql'
+import Html from './icons/Html'
+import Js from './icons/Js'
+import Material from './icons/Material'
+import Mongo from './icons/Mongo'
+import Node from './icons/Node'
+import React from './icons/React'
+import Redux from './icons/Redux'
+import Sass from './icons/Sass'
+import Sketch from './icons/Sketch'
+import Tailwind from './icons/Tailwind'
+import Webflow from './icons/Webflow'
 
 import { motion } from 'framer-motion'
 export default function LogoSkills() {
@@ -22,20 +22,21 @@ export default function LogoSkills() {
     <Redux />,
     <Node />,
     <Material />,
-    <Bootstrap />,
-    <Css3 />,
-    <Expressjs />,
+    <Js />,
     <Figma />,
+    <Sketch />,
+    <Expressjs />,
+    <Bootstrap />,
     <Graphql />,
     <Html />,
-    <Js />,
+    <Css3 />,
     <Mongo />,
     <Sass />,
-    <Sketch />,
     <Tailwind />,
     <Webflow />,
   ]
-  const styles = `w-1/4  flex flex-shrink text-black dark:text-white justify-center items-center`
+  // skill is a custom style
+  const styles = `skill  rounded-lg p-3  shadow-lg flex text-gray-700 dark:text-gray-50 justify-center items-center bg-white`
   const container = {
     hide: { opacity: 1 },
     show: { opacity: 1 },
@@ -43,7 +44,6 @@ export default function LogoSkills() {
   const item = {
     hide: { x: 0, y: 0 },
     show: (custom) => ({
-      scale: [1, 1, 1],
       x: [0, custom < 3 ? 2 : -2, 0],
       y: [0, custom < 2 ? 2 : -1, 0],
 
@@ -59,11 +59,7 @@ export default function LogoSkills() {
   }
 
   return (
-    <motion.div
-      variants={container}
-      animate='show'
-      initial='hide'
-      className='flex flex-wrap items-center justify-around p-6'>
+    <motion.div variants={container} animate='show' initial='hide' className='masonry'>
       {logos.map((logo, i) => {
         return (
           <motion.div

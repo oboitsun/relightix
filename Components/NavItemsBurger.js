@@ -12,14 +12,14 @@ const NavItemsBurger = React.memo(() => {
     if (!showMenu) setCurrentBackGr(colors[Math.floor(Math.random() * colors.length)])
   }
   const menu = {
-    close: { x: '-100vw', transition: { duration: 0.3 } },
+    close: { x: '-100%', transition: { duration: 0.3 } },
     open: { x: '0', transition: { duration: 0.3 } },
   }
   return (
-    <div>
+    <>
       <Burger showMenu={showMenu} setShowMenu={toggleMenu} />
       <motion.div
-        className={`fixed z-30 w-screen h-screen flex  justify-center items-center ${currentBackGr} top-0 left-0`}
+        className={`fixed z-30 w-full h-full flex  justify-center items-center ${currentBackGr} top-0 left-0`}
         variants={menu}
         initial={false}
         animate={showMenu ? 'open' : 'close'}>
@@ -33,7 +33,7 @@ const NavItemsBurger = React.memo(() => {
           ))}
         </div>
       </motion.div>
-    </div>
+    </>
   )
 })
 

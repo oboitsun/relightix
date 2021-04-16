@@ -48,7 +48,7 @@ export default function Logo() {
         (it, i) =>
           i < items.length && (
             <motion.div
-              key={i + 1}
+              key={i + 100}
               custom={i}
               variants={item}
               className={`hidden md:flex justify-center items-center ${it} shadow-lg `}></motion.div>
