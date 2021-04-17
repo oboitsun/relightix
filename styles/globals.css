@@ -17,27 +17,41 @@
   width: 80px;
   height: 80px;
 }
-
 .skill:nth-child(4n + 1) {
   margin-top: 20px;
 }
-
-.skill:nth-child(4n -4) {
+@media (min-width: 1024px) {
+  .masonry {
+    overflow: hidden;
+    max-width: 620px;
+    max-height: 650px;
+  }
+  .skill {
+    width: 120px;
+    height: 120px;
+    margin: 0 30px 30px 0;
+  }
+  .skill:nth-child(4n + 1) {
+    margin-top: 0;
+  }
+  .skill:nth-child(8n + 1) {
+    margin-top: 30px;
+  }
 }
 
 /*EndlessText.js custom css selectors */
 .marqueeStyle {
   display: inline-block;
   /* Apply animation to this element */
-  -webkit-animation: scrolling-left1 20s linear infinite;
-  animation: scrolling-left1 20s linear infinite;
+  -webkit-animation: scrolling-left1 40s linear infinite;
+  animation: scrolling-left1 40s linear infinite;
 }
 .marqueeStyle2 {
   display: inline-block;
   /* Apply animation to this element */
-  -webkit-animation: scrolling-left2 20s linear infinite;
-  animation: scrolling-left2 20s linear infinite;
-  animation-delay: 10s;
+  -webkit-animation: scrolling-left2 40s linear infinite;
+  animation: scrolling-left2 40s linear infinite;
+  animation-delay: 20s;
 }
 /* scrolling-left is continuous/repeatly text */
 @keyframes scrolling-left1 {

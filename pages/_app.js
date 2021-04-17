@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps, router }) {
   return (
     <AnimatePresence exitBeforeEnter>
       <div className='min-h-screen w-full bg-[#fff] dark:bg-gray-700  '>
-        <div className='fixed top-2 left-2 z-50'>{width}</div>
+        {/* <div className='fixed top-2 left-2 z-50'>{width}</div> */}
         <Nav scrolled={scrolled} />
         <Component {...pageProps} key={router.route} />
       </div>

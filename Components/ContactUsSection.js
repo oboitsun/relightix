@@ -21,17 +21,17 @@ export default function ContactUsSection({ emoji, heading, textContent }) {
         visible: { opacity: 1 },
         hidden: { opacity: 0 },
       }}
-      className='w-full flex flex-col px-5 font-lato  z-[1]'>
+      className='w-full flex flex-col lg:items-center px-5 font-lato  z-[1]'>
       <p className='leading-none text-54 pb-8 z-[1]'>{emoji}</p>
-      <p className='text-2xl opacity-50 font-semibold text-blue-700 leading-8 pb-5 sm:py-8'>
+      <p className='text-2xl opacity-50 font-semibold text-blue-700 leading-8 pb-5 lg:pb-8 '>
         {heading}
       </p>
-      <p className='flex flex-col text-2xl font-bold leading-normal pb-5'>
+      <p className='flex flex-col text-2xl lg:text-4xl lg:items-center   font-bold leading-normal pb-5 lg:pb-12'>
         {text_split.map((t, i) => (
           <span key={i}>{t}</span>
         ))}
       </p>
-      <div className='flex items-start flex-shrink  w-6/12 '>
+      <div className='flex lg:justify-center flex-shrink  w-6/12 '>
         <ContactUsButton useDark={false} />
       </div>
     </motion.div>

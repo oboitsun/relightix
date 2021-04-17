@@ -3,7 +3,7 @@ import NavItemsBurger from './NavItemsBurger'
 import NavItemsFull from './NavItemsFull'
 
 const NavItems = ({ scrolled = false }) => {
-  const invert = scrolled ? 'dark:text-black' : 'dark:text-white'
+  const invert = scrolled ? 'dark:text-white' : 'dark:text-white'
 
   return (
     <>

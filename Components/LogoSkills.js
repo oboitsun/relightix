@@ -36,7 +36,7 @@ export default function LogoSkills() {
     <Webflow />,
   ]
   // skill is a custom style
-  const styles = `skill  rounded-lg p-3  shadow-lg flex text-gray-700 dark:text-gray-50 justify-center items-center bg-white`
+  const styles = `skill  rounded-lg p-3  shadow-lg flex text-gray-700  justify-center items-center bg-white z-[1]`
   const container = {
     hide: { opacity: 1 },
     show: { opacity: 1 },
@@ -59,7 +59,8 @@ export default function LogoSkills() {
   }
 
   return (
-    <motion.div variants={container} animate='show' initial='hide' className='masonry'>
+    //masonry is a custon style
+    <motion.div variants={container} animate='show' initial='hide' className='masonry  z-[1]'>
       {logos.map((logo, i) => {
         return (
           <motion.div

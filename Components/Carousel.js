@@ -39,18 +39,31 @@ export default function Carousel() {
     slidesToScroll: 1,
   }
   return (
-    <div className='w-full overflow-hidden'>
-      <Slider {...settings}>
+    <div className='w-full'>
+      <div className='max-h-[600px] max-w-[600px] hidden lg:grid grid-rows-2 grid-cols-2 gap-7 pb-3 px-5'>
         {items.map((s, i) => (
-          <div key={i} className='h-full w-full pl-5 pr-5 py-10 outline-none'>
+          <div key={i} className=' outline-none'>
             <div className='h-[270px] w-[270px]  p-6 flex flex-col rounded-xl shadow-md bg-white'>
-              <div className={`h-16 w-16 rounded-lg ${s.color} mb-6`}></div>
-              <div className='font-semibold text-lg leading-normal mb-3'>{s.title}</div>
+              <div className={`h-16 w-16 rounded-lg ${s.color} `}></div>
+              <div className='font-semibold text-lg leading-normal '>{s.title}</div>
               <div className='font-light opacity-50 leading-snug'>{s.text}</div>
             </div>
           </div>
         ))}
-      </Slider>
+      </div>
+      <div className='w-full overflow-hidden lg:hidden'>
+        <Slider {...settings}>
+          {items.map((s, i) => (
+            <div key={i} className='h-full w-full pl-5 pr-5 py-10 outline-none'>
+              <div className='h-[270px] w-[270px]  p-6 flex flex-col rounded-xl shadow-md bg-white'>
+                <div className={`h-16 w-16 rounded-lg ${s.color} mb-6`}></div>
+                <div className='font-semibold text-lg leading-normal mb-3'>{s.title}</div>
+                <div className='font-light opacity-50 leading-snug'>{s.text}</div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   )
 }
