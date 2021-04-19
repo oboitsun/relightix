@@ -44,8 +44,8 @@ export default function Carousel() {
         {items.map((s, i) => (
           <div key={i} className=' outline-none'>
             <div className='h-[270px] w-[270px]  p-6 flex flex-col rounded-xl shadow-md bg-white'>
-              <div className={`h-16 w-16 rounded-lg ${s.color} `}></div>
-              <div className='font-semibold text-lg leading-normal '>{s.title}</div>
+              <div className={`h-16 w-16 rounded-lg ${s.color} mb-6`}></div>
+              <div className='font-semibold text-lg leading-normal mb-3'>{s.title}</div>
               <div className='font-light opacity-50 leading-snug'>{s.text}</div>
             </div>
           </div>

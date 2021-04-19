@@ -29,7 +29,7 @@ export default function Home() {
       </div>
       <div className='hidden lg:flex w-full pt-10  md:pt-36 pb-10 md:pb-36'>
         <EndlessText
-          text={`7 + years of experience and more than 50 happy clients `}
+          text={`7+ years of experience and more than 50 happy clients `}
           emoji={` 💪🏻 `}
         />
       </div>

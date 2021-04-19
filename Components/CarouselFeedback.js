@@ -53,7 +53,7 @@ export default function CarouselFeedback() {
     prevArrow: <SampleNextArrow rotate={180} right={'120px'} />,
   }
   return (
-    <div className='w-full h-auto lg:h-[540px] max-w-[600px] overflow-hidden '>
+    <div className='w-full h-auto lg:h-[540px] w-[600px] overflow-hidden '>
       <Slider {...settings}>
         {items.map((s, i) => (
           <div
