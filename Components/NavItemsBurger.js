@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Burger from './icons/Burger'
+import Burger from './Burger'
 import { motion } from 'framer-motion'
 
 const NavItemsBurger = React.memo(() => {

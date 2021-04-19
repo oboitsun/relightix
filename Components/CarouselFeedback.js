@@ -53,13 +53,13 @@ export default function CarouselFeedback() {
     prevArrow: <SampleNextArrow rotate={180} right={'120px'} />,
   }
   return (
-    <div className='w-full h-auto lg:h-[540px] w-[600px] overflow-hidden '>
+    <div className='w-full h-auto lg:h-[540px] lg:w-[600px] overflow-hidden '>
       <Slider {...settings}>
         {items.map((s, i) => (
           <div
             key={i}
             className='h-full lg:h-[500px] pl-5 lg:p-5 pt-5 pb-12  lg:mr-10 outline-none'>
-            <div className='relative h-full lg:h-[500px] w-[320px] lg:w-[570px]  p-5 lg:p-12 justify-between  flex flex-col rounded-xl shadow-md lg:shadow-lg bg-white'>
+            <div className='relative h-full lg:h-[500px] w-[320px] max-w-[98vw] lg:w-[570px]  p-5 lg:p-12 justify-between  flex flex-col rounded-xl shadow-md lg:shadow-lg bg-white'>
               <div className='hidden absolute lg:flex'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'

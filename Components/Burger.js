@@ -26,7 +26,7 @@ const Burger = ({ setShowMenu, showMenu }) => {
         onClick={() => {
           setShowMenu(!showMenu)
         }}
-        className={`fill-current relative  w-6 h-5 z-40 cursor-pointer `}
+        className={`fill-current relative w-6 h-5 z-40 cursor-pointer `}
         viewBox='0 0 23 23'>
         <Path
           filter='drop-shadow( 0.5px 0.5px 0.5px  rgba(0, 0, 0, .2))'

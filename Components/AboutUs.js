@@ -28,7 +28,7 @@ export default function AboutUs() {
       <div className=' lg:order-2 max-w-lg flex flex-col px-5 font-lato  z-[1] lg:ml-12 '>
         <p className=' leading-none text-54  z-[1]'>👋</p>
         <p className='text-2xl opacity-50 font-semibold leading-8 py-8'>About Us</p>
-        <p className='text-2xl font-bold leading-normal pb-5 line-clamp-4'>
+        <p className='text-2xl font-bold leading-normal pb-5 '>
           We provide high-quality
           <br /> design and developing
           <br /> solutions for Web & Mobile
