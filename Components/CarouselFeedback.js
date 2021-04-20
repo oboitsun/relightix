@@ -7,21 +7,21 @@ export default function CarouselFeedback() {
   const items = [
     {
       author: `Dugan O'Donnell`,
-      position: 'CEO Groundly',
+      position: 'CEO at Groundly',
       text: `Incredible experience working with Relightix. Communication was superb. They got all the work done to a very high quality quickly. My team was very impressed. He really understands UX and what UI patterns work. We are very happy with all the work they delivered and love showing it off to people. We can't wait to work with Relightix  again.`,
-      color: 'bg-red-300',
+      color: 'bg-green-400',
     },
     {
       author: `Dugan O'Donnell`,
-      position: 'CEO Groundly',
+      position: 'CEO at Groundly',
       text: `Incredible experience working with Relightix. Communication was superb. They got all the work done to a very high quality quickly. My team was very impressed. He really understands UX and what UI patterns work. We are very happy with all the work they delivered and love showing it off to people. We can't wait to work with Relightix  again.`,
-      color: 'bg-red-300',
+      color: 'bg-green-400',
     },
     {
       author: `Dugan O'Donnell`,
-      position: 'CEO Groundly',
+      position: 'CEO at Groundly',
       text: `Incredible experience working with Relightix. Communication was superb. They got all the work done to a very high quality quickly. My team was very impressed. He really understands UX and what UI patterns work. We are very happy with all the work they delivered and love showing it off to people. We can't wait to work with Relightix  again.`,
-      color: 'bg-red-300',
+      color: 'bg-green-400',
     },
   ]
   function SampleNextArrow(props) {
@@ -74,7 +74,9 @@ export default function CarouselFeedback() {
                   />
                 </svg>
               </div>
-              <div className='font-light opacity-50 lg:text-xl leading-snug my-10'>{s.text}</div>
+              <div className='font-light opacity-50 lg:text-xl leading-snug italic my-10'>
+                {s.text}
+              </div>
               <div className='flex items-center'>
                 <div className={`h-10 w-10 rounded-100 ${s.color} mr-5`}></div>
                 <div className='flex flex-col'>

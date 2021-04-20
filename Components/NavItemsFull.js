@@ -6,7 +6,7 @@ export default function NavItemsFull({ invert }) {
       <span>About us</span>
       <span>What We Do</span>
       <span>Contacts</span>
-      <div className='flex justify-between items-center flex-shrink min-w-max w-24'>
+      <div className='hidden justify-between items-center flex-shrink min-w-max w-24'>
         <a href='/'>
           <svg
             className='fill-current'

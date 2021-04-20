@@ -2,15 +2,15 @@ import { motion } from 'framer-motion'
 
 export default function Logo() {
   const items = [
-    'bg-yellow-400 rounded-10',
-    'bg-purple-700 rounded-tr-100 rounded-10 ',
-    'bg-green-500 rounded-10',
-    'bg-blue-500 rounded-10',
-    'bg-yellow-500 rounded-10 rounded-br-100',
-    'bg-blue-500 rounded-10',
-    'bg-green-500 rounded-10',
-    'bg-purple-700 rounded-10 rounded-bl-100',
-    'bg-yellow-400 rounded-10 rounded-bl-100',
+    'bg-rYellow rounded-10 shadow-rYellow',
+    'bg-rPurple rounded-tr-100 rounded-10 ',
+    'bg-rGreen rounded-10',
+    'bg-rBlue rounded-10 shadow-rBlue',
+    'bg-rOrange rounded-10 rounded-br-100 shadow-rOrange',
+    'bg-rBlue rounded-10 shadow-rBlue',
+    'bg-rGreen rounded-10',
+    'bg-rNavy rounded-10 rounded-bl-100 shadow-rNavy',
+    'bg-rYellow rounded-10 rounded-bl-100 shadow-rYellow',
   ]
   const container = {
     hidden: { scale: 0, transition: { duration: 1 } },
@@ -43,7 +43,7 @@ export default function Logo() {
       variants={container}
       animate='visible'
       initial='hidden'
-      className='hidden w-full h-full auto-cols-fr auto-rows-fr md:grid grid-cols-3 grid-rows-3 gap-10p'>
+      className='hidden w-full h-full auto-cols-fr auto-rows-fr md:grid grid-cols-3 grid-rows-3 gap-10p '>
       {items.map(
         (it, i) =>
           i < items.length && (
@@ -51,7 +51,7 @@ export default function Logo() {
               key={i + 100}
               custom={i}
               variants={item}
-              className={`hidden md:flex justify-center items-center ${it} shadow-lg `}></motion.div>
+              className={`hidden md:flex justify-center items-center ${it}`}></motion.div>
           )
       )}
     </motion.div>

@@ -60,7 +60,7 @@ export default function LogoSkills() {
 
   return (
     //masonry is a custon style
-    <motion.div variants={container} animate='show' initial='hide' className='masonry  z-[1]'>
+    <motion.div variants={container} animate='show' initial='hide' className='masonry p-2  z-[1]'>
       {logos.map((logo, i) => {
         return (
           <motion.div
