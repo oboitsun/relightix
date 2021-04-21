@@ -7,21 +7,28 @@ export default function CarouselFeedback() {
   const items = [
     {
       author: `Dugan O'Donnell`,
-      position: 'CEO at Groundly',
+      position: 'Groundly Co-Founder',
       text: `Incredible experience working with Relightix. Communication was superb. They got all the work done to a very high quality quickly. My team was very impressed. He really understands UX and what UI patterns work. We are very happy with all the work they delivered and love showing it off to people. We can't wait to work with Relightix  again.`,
-      color: 'bg-green-400',
+      logo: '/logos/Groundly.png',
     },
     {
-      author: `Dugan O'Donnell`,
-      position: 'CEO at Groundly',
-      text: `Incredible experience working with Relightix. Communication was superb. They got all the work done to a very high quality quickly. My team was very impressed. He really understands UX and what UI patterns work. We are very happy with all the work they delivered and love showing it off to people. We can't wait to work with Relightix  again.`,
-      color: 'bg-green-400',
+      author: `Frenk Locmelis`,
+      position: 'CEO at FLZS Solutions GmbH',
+      text: `Absolutely expert in their domain. Very skillful and also hardworking developers.
+      `,
+      logo: '/logos/Frenk.png',
     },
     {
-      author: `Dugan O'Donnell`,
-      position: 'CEO at Groundly',
-      text: `Incredible experience working with Relightix. Communication was superb. They got all the work done to a very high quality quickly. My team was very impressed. He really understands UX and what UI patterns work. We are very happy with all the work they delivered and love showing it off to people. We can't wait to work with Relightix  again.`,
-      color: 'bg-green-400',
+      author: `Art Henson`,
+      position: 'Company Owner',
+      text: `Relightix is a super nice and they did a great job. They quickly grasped the concept and had a comp before the deadline. Team made revisions and followed up with me in a very timely manner. I will absolutely work with them again.`,
+      logo: '/logos/Arthenson.png',
+    },
+    {
+      author: `Matias Lirman`,
+      position: 'Software Engineer',
+      text: `They worked efficiently and produced exactly what I was looking for. Could not have asked for a better developers for this project!`,
+      logo: '/logos/Matias.png',
     },
   ]
   function SampleNextArrow(props) {
@@ -78,7 +85,9 @@ export default function CarouselFeedback() {
                 {s.text}
               </div>
               <div className='flex items-center'>
-                <div className={`h-10 w-10 rounded-100 ${s.color} mr-5`}></div>
+                <div className={`h-10 w-10 rounded-100  mr-5`}>
+                  <img src={s.logo} alt={s.author} />
+                </div>
                 <div className='flex flex-col'>
                   <div className='font-semibold text-xl leading-normal'>{s.author}</div>
                   <div className='t text-base text-gray-500'>{s.position}</div>

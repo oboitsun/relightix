@@ -49,8 +49,8 @@ export default function Home() {
       </div>
       <div className='hidden lg:flex w-full pt-10  md:pt-36 pb-10 md:pb-36'>
         <EndlessText
-          text={`Contact us and we solve your problems... At least, development ones... `}
-          emoji={` 🙃 `}
+          text={` Our door is opened, be healthy! Our door is opened, be healthy! `}
+          emoji={` `}
         />
       </div>
       <div className='w-full h-auto py-12 lg:py-24 relative  bg-blue-100  '>
