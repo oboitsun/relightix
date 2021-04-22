@@ -1,12 +1,19 @@
 import Upwork from './icons/Upwork'
 import { Link, animateScroll as scroll } from 'react-scroll'
 export default function NavItemsFull({ invert }) {
-  const linkProps = { spy: true, smooth: true, offset: -200, duration: 500, activeClass: 'active' }
+  const linkProps = {
+    spy: true,
+    smooth: true,
+    offset: -200,
+    duration: 500,
+    activeClass: 'active',
+    className: 'cursor-pointer',
+  }
   return (
     <div
       className={`flex justify-between items-center text-sm  md:text-base lg:text-[18px] flex-grow    ${invert}  `}>
       <Link to='section1' {...linkProps}>
-        <span>About us</span>
+        <span className='cur'>About us</span>
       </Link>
       <Link to='section2' {...linkProps}>
         <span>What We Are Familiar With</span>

@@ -28,7 +28,7 @@ const NavItemsBurger = React.memo(() => {
     <>
       <Burger showMenu={showMenu} setShowMenu={toggleMenu} />
       <motion.div
-        className={`fixed z-30 w-full h-full flex  justify-center items-center ${currentBackGr} top-0 left-0`}
+        className={`fixed z-30 w-full h-full flex  justify-center items-center ${currentBackGr} top-0 left-0 `}
         variants={menu}
         initial={false}
         animate={showMenu ? 'open' : 'close'}>
