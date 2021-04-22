@@ -13,6 +13,7 @@ export default function ContactUsSection({ emoji, heading, textContent }) {
   }, [controls, inView])
   return (
     <motion.div
+      id='section4'
       ref={ref}
       animate={controls}
       initial='hidden'

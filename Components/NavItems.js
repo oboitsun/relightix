@@ -7,7 +7,7 @@ const NavItems = ({ scrolled = false }) => {
 
   return (
     <>
-      <div className='hidden md:flex flex-grow max-w-md '>
+      <div className='hidden md:flex flex-grow max-w-xl '>
         <NavItemsFull invert={invert} />
       </div>
       <div className='md:hidden dark:text-white text-black '>

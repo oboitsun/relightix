@@ -14,6 +14,7 @@ export default function Testimonials() {
 
   const text = (
     <div
+      id='section3'
       key={2}
       ref={ref}
       animate={controls}

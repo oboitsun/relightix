@@ -14,6 +14,7 @@ export default function AboutUs() {
 
   const text = (
     <div
+      id='section1'
       key={2}
       ref={ref}
       animate={controls}

@@ -14,6 +14,7 @@ export default function WhatWeFamiliarWith() {
 
   const text = (
     <motion.div
+      id='section2'
       key={2}
       ref={ref}
       animate={controls}

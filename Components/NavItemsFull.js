@@ -1,11 +1,23 @@
 import Upwork from './icons/Upwork'
+import { Link, animateScroll as scroll } from 'react-scroll'
 export default function NavItemsFull({ invert }) {
+  const linkProps = { spy: true, smooth: true, offset: -200, duration: 500, activeClass: 'active' }
   return (
     <div
-      className={`flex justify-between items-center text-sm sm:text-base md:text-[18px] flex-grow    ${invert}  `}>
-      <span>About us</span>
-      <span>What We Do</span>
-      <span>Contacts</span>
+      className={`flex justify-between items-center text-sm  md:text-base lg:text-[18px] flex-grow    ${invert}  `}>
+      <Link to='section1' {...linkProps}>
+        <span>About us</span>
+      </Link>
+      <Link to='section2' {...linkProps}>
+        <span>What We Are Familiar With</span>
+      </Link>
+      <Link to='section3' {...linkProps}>
+        <span>Testimonials</span>
+      </Link>
+      <Link to='section4' {...linkProps}>
+        <span>Have questions?</span>
+      </Link>
+
       <div className='hidden justify-between items-center flex-shrink min-w-max w-24'>
         <a href='/'>
           <svg

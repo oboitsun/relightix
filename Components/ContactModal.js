@@ -16,7 +16,7 @@ export default function ContactModal({ handleClick, setShowModal }) {
       <div className='p-5 lg:p-12 w-[95vw] lg:w-3/4 max-w-[970px]  bg-gray-50 rounded-lg lg:rounded-xl shadow-md flex flex-wrap justify-between'>
         {!succeed && (
           <>
-            <h3 className='w-full text-xl lg:text-4xl font-bold leading-normal'>
+            <h3 className='w-full text-xl lg:text-4xl font-bold text-black leading-normal'>
               Tell us more about your issues
             </h3>
             <Formik

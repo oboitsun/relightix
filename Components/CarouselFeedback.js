@@ -81,7 +81,7 @@ export default function CarouselFeedback() {
                   />
                 </svg>
               </div>
-              <div className='font-light opacity-50 lg:text-xl leading-snug italic my-10'>
+              <div className='font-light opacity-50 lg:text-xl leading-snug italic my-12'>
                 {s.text}
               </div>
               <div className='flex items-center'>

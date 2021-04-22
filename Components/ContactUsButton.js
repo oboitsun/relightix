@@ -7,7 +7,7 @@ export default function ContactUsButton({ useDark = true }) {
     const cls = event.target.classList
     if (cls.contains('modal') || cls.contains('contact-button')) setShowModal(!showModal)
   }
-  const dark = useDark ? `dark:bg-white dark:text-black` : ``
+  const dark = useDark ? `` : ``
   return (
     <>
       <button
