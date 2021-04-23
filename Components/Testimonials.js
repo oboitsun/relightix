@@ -34,8 +34,8 @@ export default function Testimonials() {
           We are flexible and work with clients <br /> all over the world
         </h3>
         <p className='text-2xl leading-normal font-light opacity-50'>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-          consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          We work with clients all over the world. Find out what our customers think of us. Perhaps
+          you will be next.
         </p>
       </div>
       <div className='w-full max-h-[580px] lg:w-auto lg:mr-12 lg:order-1 '>

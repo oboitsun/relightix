@@ -3,12 +3,12 @@ import { motion } from 'framer-motion'
 export default function Logo() {
   const items = [
     'bg-rYellow rounded-10 shadow-rYellow',
-    'bg-rPurple rounded-tr-100 rounded-10 ',
-    'bg-rGreen rounded-10',
+    'bg-rPurple rounded-tr-100 rounded-10 shadow-rPurple',
+    'bg-rGreen rounded-10 shadow-rGreen',
     'bg-rBlue rounded-10 shadow-rBlue',
     'bg-rOrange rounded-10 rounded-br-100 shadow-rOrange',
     'bg-rBlue rounded-10 shadow-rBlue',
-    'bg-rGreen rounded-10',
+    'bg-rGreen rounded-10 shadow-rGreen',
     'bg-rNavy rounded-10 rounded-bl-100 shadow-rNavy',
     'bg-rYellow rounded-10 rounded-bl-100 shadow-rYellow',
   ]

@@ -27,7 +27,7 @@ export default function Carousel() {
       title: 'UI/UX Design',
       text:
         'Providing modern solutions in design. Full circle from wireframes to mockups. Making project libraries.',
-      color: 'bg-yellow-200',
+      color: 'bg-yellow-100',
       logo: (
         <svg
           xmlns='http://www.w3.org/2000/svg'

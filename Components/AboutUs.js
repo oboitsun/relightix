@@ -36,8 +36,8 @@ export default function AboutUs() {
           <br /> applications.
         </p>
         <div className='text-2xl leading-normal font-light opacity-50'>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-          consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          Our team is flexible and approaches each project individually. Every project is important
+          to us.
         </div>
       </div>
       <div className='w-full lg:w-auto  lg:order-1 z-[1] lg:mr-12'>

@@ -35,8 +35,8 @@ export default function WhatWeFamiliarWith() {
           development from one hand.
         </p>
         <p className='text-2xl leading-normal font-light opacity-50 z-[1]'>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-          consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          Trying to use only modern skills and tools to create and provide better experience to your
+          project.
         </p>
       </div>
       <div className='w-full lg:max-w-2xl pl-2 z-[1]'>
