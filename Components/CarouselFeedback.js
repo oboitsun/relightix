@@ -65,7 +65,7 @@ export default function CarouselFeedback() {
         {items.map((s, i) => (
           <div
             key={i}
-            className='h-full lg:h-[500px] pl-5 lg:p-5 pt-5 pb-12  lg:mr-10 outline-none'>
+            className='h-[480px] lg:h-[500px] pl-5 lg:p-5 pt-5 pb-12  lg:mr-10 outline-none'>
             <div className='relative h-full lg:h-[500px] w-[320px] max-w-[98vw] lg:w-[570px]  p-5 lg:p-12 justify-between  flex flex-col rounded-xl shadow-md lg:shadow-lg bg-white'>
               <div className='hidden absolute lg:flex'>
                 <svg
